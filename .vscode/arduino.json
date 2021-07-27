@@ -1,0 +1,6 @@
+{
+    "port": "COM19",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrisp",
+    "sketch": "X-01-MD02_UDPSensor.ino"
+}
