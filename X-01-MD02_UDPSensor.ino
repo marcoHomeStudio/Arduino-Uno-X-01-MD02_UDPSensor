@@ -1,14 +1,14 @@
 
 #include <Ethernet.h>
 #include <EthernetUdp.h>
-
 // Enter a MAC address and IP address for your controller below.
+
 byte mac[] = {
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED
 };
 IPAddress ip(192, 168, 1, 177);
-
 unsigned int udpPort = 8888;      // Your UDP port
+
 //char udpServer[]="myUDPserver"; // uncomment for network name instead of ip address
 byte  udpServer[4]={192,168,1,61};// uncomment for IP address instead of network name
 
@@ -42,7 +42,7 @@ void setup() {
   // start UDP
   Udp.begin(udpPort);
   //Change the following to change the initialization string to be send to the sensor
-  Serial.print ("HZ:1"); //Temperature and Humiditye reporting rates in Hx (0.5,1,2,5,10)
+  //Serial.print ("HZ:1"); //Temperature and Humiditye reporting rates in Hx (0.5,1,2,5,10)
 
   //start sampling rate timer
   timer=millis();
