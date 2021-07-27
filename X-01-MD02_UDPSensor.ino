@@ -32,6 +32,7 @@ void setup() {
   while (!Serial) {
     
   }
+  
   // Check for Ethernet hardware present
   if (Ethernet.hardwareStatus() == EthernetNoHardware) {
     while (true) {
